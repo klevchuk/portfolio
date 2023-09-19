@@ -16,12 +16,13 @@ export const Works = () => {
         <StyledWorks>
             <SectionTitle>My Works</SectionTitle>
             <Menu menuItems={worksItems}/>
-            <FlexWrapper justify={"space-around"}/>
+            <FlexWrapper justify={"space-around"}>
             <Work title={"Social Network"}
             text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cumque dicta distinctio dolorem doloribus eius id ipsum iure maiores minus odio perspiciatis possimus, quasi quisquam quo sed, soluta ullam?"}
             src={socialImg}/>
             <Work title={"Timer"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias commodi cumque dicta distinctio dolorem doloribus eius id ipsum iure maiores minus odio perspiciatis possimus, quasi quisquam quo sed, soluta ullam?"}
             src={timerImg}/>
+            </FlexWrapper>
         </StyledWorks>
     );
 };
