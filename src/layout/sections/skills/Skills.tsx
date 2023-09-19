@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
 import {FlexWrapper} from "../../../componend/FlexWrapper";
-import {Icon} from "../../../componend/icon/Icon";
 import {SectionTitle} from "../../../componend/SectionTitle";
 import {Skill} from "./skill/Skill";
 
@@ -9,7 +8,7 @@ export const Skills = () => {
     return (
         <StyledSkills>
             <SectionTitle>My Skills</SectionTitle>
-            <FlexWrapper wrap={"wrap"} justify={"space-berween"}>
+            <FlexWrapper wrap={"wrap"} justify={"space-between"}>
                 <Skill iconId={"codeSvg"} title={"html5"}
                        description={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut distinctio dolorum eius impedit iste modi officia, recusandae veniam veritatis! Ad assumenda autem culpa fuga obcaecati odit placeat porro sunt, voluptates."}/>
                 <Skill iconId={"css3"} title={"css3"}
