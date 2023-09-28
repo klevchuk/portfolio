@@ -6,11 +6,11 @@ import styled, {css} from "styled-components";
 export const MobileMenu = (props: { menuItems: Array<string> }) => {
     return (
             <StyledMobileMenu>
-                <BurgerButton isOpen={true}>
+                <BurgerButton isOpen={false}>
                     <span></span>
                 </BurgerButton>
 
-                <MobileMenuPopup isOpen={true}>
+                <MobileMenuPopup isOpen={false}>
                     <ul>
                         {props.menuItems.map((items: string, index: number) => {
                             return <ListItem key={index}>

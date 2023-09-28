@@ -4,12 +4,13 @@ import photo from "./../../../assets/images/avatar.jpg"
 import {FlexWrapper} from "../../../componend/FlexWrapper";
 import {Container} from "../../../componend/Container";
 import {theme} from "../../../styles/Theme";
+import {font} from "../../../styles/Common";
 
 export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper align={"center"} justify={"space-between"}>
+                <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
                     <div>
                         <SmallText>Hi There</SmallText>
                         <Name>I am <span>Vlad Klevchuk</span></Name>
@@ -46,6 +47,11 @@ position: relative;
     top: -24px;
     left: 24px;
     z-index: -1;
+
+    @media ${theme.media.mobile} {
+      width: 314px;
+      height: 414px;
+    }
   }
 `
 
@@ -54,6 +60,11 @@ const Photo = styled.img`
   width: 350px;
   height: 430px;
   object-fit: cover;
+  
+  @media ${theme.media.mobile} {
+    width: 310px;
+    height: 380px;
+  }
 `
 
 const MainTitle = styled.h1`
@@ -62,10 +73,11 @@ const MainTitle = styled.h1`
 `
 
 const Name = styled.h2`
-  font-family: Josefin Sans, sans-serif;
-  font-size: 50px;
-  font-weight: 700;
-  letter-spacing: 2.5px;
+  ${font({family: "Josefin Sans, sans-serif", weight: 700, Fmax: 50, Fmin: 36})}
+  //font-family: Josefin Sans, sans-serif;
+  //font-size: 50px;
+  //font-weight: 700;
+  letter-spacing: 0.05em;
   margin: 10px 0;
   
   span {
