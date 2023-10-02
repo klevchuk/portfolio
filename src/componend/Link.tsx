@@ -3,7 +3,6 @@ import {theme} from "../styles/Theme";
 
 export const Link = styled.a`
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
